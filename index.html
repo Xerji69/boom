@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Портфолио. Современный адаптивный сайт — landing / портфолио.">
+  <title>Портфолио — Твоё имя</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Портфолио — Твоё имя">
+  <meta property="og:description" content="Краткое описание — кто ты и чем занимаешься">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (можешь заменить) -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Google Fonts example (можно заменить) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">ТвоёИмя</a>
+      <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">&#9776;</button>
+      <nav class="nav" id="nav">
+        <a href="#about">О себе</a>
+        <a href="#works">Работы</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Главный экран">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Привет — я <span class="accent">Твоё имя</span></h1>
+          <p class="lead">Кратко: актёр / разработчик / дизайнер / фотограф — выбери нужное. Портфолио, промо, контакты.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#works">Мои работы</a>
+            <a class="btn outline" href="#contact">Связаться</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <!-- Можно заменить картинкой или аватаром -->
+          <img src="hero-placeholder.jpg" alt="Портрет" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>О себе</h2>
+        <p>Коротко о твоём опыте, специализации, достижениях. Например: «Актёр с опытом в театре и кино, участвовал в X постановках...»</p>
+
+        <ul class="stats">
+          <li><strong>8+</strong><span>лет опыта</span></li>
+          <li><strong>50+</strong><span>постановок / проектов</span></li>
+          <li><strong>Контакты</strong><span>email, телефон</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <h2>Работы</h2>
+        <p class="muted">Избранные проекты / ролики / сцены.</p>
+
+        <div class="grid">
+          <article class="card">
+            <img src="work-1.jpg" alt="Название проекта 1" loading="lazy">
+            <h3>Проект 1</h3>
+            <p class="card-desc">Короткое описание — роль, год, место.</p>
+            <a class="card-link" href="#">Подробнее</a>
+          </article>
+
+          <article class="card">
+            <img src="work-2.jpg" alt="Название проекта 2" loading="lazy">
+            <h3>Проект 2</h3>
+            <p class="card-desc">Короткое описание.</p>
+            <a class="card-link" href="#">Подробнее</a>
+          </article>
+
+          <article class="card">
+            <img src="work-3.jpg" alt="Название проекта 3" loading="lazy">
+            <h3>Проект 3</h3>
+            <p class="card-desc">Короткое описание.</p>
+            <a class="card-link" href="#">Подробнее</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h4>Промо-видео</h4>
+            <p>Короткое описание услуги.</p>
+          </div>
+          <div class="service">
+            <h4>Театр / кастинг</h4>
+            <p>Короткое описание услуги.</p>
+          </div>
+          <div class="service">
+            <h4>Онлайн-курс</h4>
+            <p>Короткое описание услуги.</p>
+          </div>
+</div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Связаться</h2>
+        <p>Почта: <a href="mailto:you@example.com">you@example.com</a> — Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            <span>Имя</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span>Сообщение</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Отправить</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> ТвоёИмя — Все права защищены.</p>
+      <nav class="footer-nav">
+        <a href="#">Instagram</a>
+        <a href="#">VK</a>
+        <a href="#">YouTube</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
